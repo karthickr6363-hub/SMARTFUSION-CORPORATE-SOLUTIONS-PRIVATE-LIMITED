@@ -1,12 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #DA62B8;
-    --secondary: #673592;
-    --light: #E3C8DE;
-    --dark: #411A70;
-    --border: #AF9BBF;
-    --glow: #E3C8DE;
-    --heading: #673592;
+    --primary: #CBA153;
+    --secondary: #1A222C;
+    --light: #F2E8D5;
+    --dark: #111827;
+    --border: #DFE4EA;
+    --glow: #F2E8D5;
+    --heading: #1A222C;
 }
 
 
@@ -24,9 +24,11 @@
     0% {
         -webkit-transform: perspective(120px)
     }
+
     50% {
         -webkit-transform: perspective(120px) rotateY(180deg)
     }
+
     100% {
         -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
     }
@@ -37,10 +39,12 @@
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
     }
+
     50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
     }
+
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -93,13 +97,13 @@ h6,
     color: #FFFFFF;
     background-color: var(--primary);
     border-color: var(--primary);
-    box-shadow: inset 0 0 0 50px transparent, 0 0 20px rgba(218, 98, 184, 0.3);
+    box-shadow: inset 0 0 0 50px transparent, 0 0 20px rgba(203, 161, 83, 0.3);
 }
 
 .btn-primary:hover {
-    background-color: #C850A0;
-    border-color: #C850A0;
-    box-shadow: inset 0 0 0 0 var(--primary), 0 0 30px rgba(218, 98, 184, 0.5);
+    background-color: #A38142;
+    border-color: #A38142;
+    box-shadow: inset 0 0 0 0 var(--primary), 0 0 30px rgba(203, 161, 83, 0.5);
 }
 
 .btn-secondary:hover {
@@ -187,7 +191,7 @@ h6,
     .navbar-dark .navbar-brand h1 {
         color: var(--primary);
     }
-    
+
     .navbar-dark .navbar-brand .navbar-brand-text {
         color: var(--heading) !important;
     }
@@ -202,7 +206,7 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-dark {
         position: fixed;
         background: #FFFFFF;
@@ -232,7 +236,7 @@ h6,
     .sticky-top.navbar-dark .navbar-brand h1 {
         color: var(--primary);
     }
-    
+
     .sticky-top.navbar-dark .navbar-brand .navbar-brand-text {
         color: var(--heading) !important;
     }
@@ -245,7 +249,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(65, 26, 112, .7);
+    background: rgba(17, 24, 39, .7);
     z-index: 1;
 }
 
@@ -322,15 +326,48 @@ h6,
 }
 
 @-webkit-keyframes section-title-run {
-    0% {left: 0; } 50% { left : 145px; } 100% { left: 0; }
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 145px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 @-webkit-keyframes section-title-run-center {
-    0% { left: 50%; margin-left: -75px; } 50% { left : 50%; margin-left: 45px; } 100% { left: 50%; margin-left: -75px; }
+    0% {
+        left: 50%;
+        margin-left: -75px;
+    }
+
+    50% {
+        left: 50%;
+        margin-left: 45px;
+    }
+
+    100% {
+        left: 50%;
+        margin-left: -75px;
+    }
 }
 
 @-webkit-keyframes section-title-run-sm {
-    0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 85px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 
@@ -408,7 +445,7 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-item {
     background: #FFFFFF !important;
-    box-shadow: 0 0 30px var(--border), 0 0 20px rgba(227, 200, 222, 0.3);
+    box-shadow: 0 0 30px var(--border), 0 0 20px rgba(242, 232, 213, 0.3);
     border: 1px solid var(--border);
 }
 
@@ -438,12 +475,12 @@ h6,
 }
 
 .team-item:hover {
-    box-shadow: 0 0 30px var(--border), 0 0 20px rgba(227, 200, 222, 0.3);
+    box-shadow: 0 0 30px var(--border), 0 0 20px rgba(242, 232, 213, 0.3);
     border: 1px solid var(--border);
 }
 
 .team-item:hover .team-social {
-    background: rgba(65, 26, 112, .7);
+    background: rgba(17, 24, 39, .7);
 }
 
 .team-item:hover .team-social a.btn:first-child {
@@ -491,13 +528,33 @@ h6,
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
-    bottom: 45px;
+    right: 30px;
+    bottom: 95px;
     z-index: 99;
 }
 
 .bg-header {
-    background: linear-gradient(rgba(65, 26, 112, .7), rgba(65, 26, 112, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-about {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/about-header.png) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-service {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/service-header.png) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-careers {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/careers-header.png) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-contact {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/contact-header.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -545,6 +602,7 @@ h6,
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -627,6 +685,7 @@ h6,
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -710,9 +769,9 @@ h6,
 }
 
 .ai-chat-send-btn:hover {
-    background: #C850A0;
+    background: #A38142;
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(218, 98, 184, 0.5);
+    box-shadow: 0 0 20px rgba(203, 161, 83, 0.5);
 }
 
 .ai-chat-send-btn:active {
@@ -726,7 +785,7 @@ h6,
     color: white;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 5px 20px rgba(218, 98, 184, 0.4);
+    box-shadow: 0 5px 20px rgba(203, 161, 83, 0.4);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -737,9 +796,9 @@ h6,
 }
 
 .ai-chat-toggle-btn:hover {
-    background: #C850A0;
+    background: #A38142;
     transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(218, 98, 184, 0.5);
+    box-shadow: 0 8px 25px rgba(203, 161, 83, 0.5);
 }
 
 .ai-chat-badge {
@@ -799,7 +858,7 @@ h6,
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(218, 98, 184, 0.9);
+    background: rgba(203, 161, 83, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -860,7 +919,7 @@ h6,
 
 .partner-logo:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 15px rgba(227, 200, 222, 0.4) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 15px rgba(242, 232, 213, 0.4) !important;
     border-color: var(--primary);
 }
 
@@ -872,7 +931,7 @@ h6,
 
 .cert-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 15px rgba(227, 200, 222, 0.4) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 15px rgba(242, 232, 213, 0.4) !important;
     border-color: var(--primary);
 }
 
@@ -892,21 +951,25 @@ h6,
     height: 60px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1);
 }
 
 @media (max-width: 991px) {
     .navbar-brand img {
         height: 40px;
     }
-    
+
     .navbar-dark .navbar-brand .navbar-brand-text {
         color: var(--heading) !important;
     }
 }
 
 /*** Custom Theme Colors ***/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--heading);
 }
 
@@ -924,11 +987,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
     border-color: var(--border);
-    box-shadow: 0 2px 10px rgba(175, 155, 191, 0.2);
+    box-shadow: 0 2px 10px rgba(223, 228, 234, 0.2);
 }
 
 .card:hover {
-    box-shadow: 0 5px 20px rgba(175, 155, 191, 0.3), 0 0 15px rgba(227, 200, 222, 0.2);
+    box-shadow: 0 5px 20px rgba(223, 228, 234, 0.3), 0 0 15px rgba(242, 232, 213, 0.2);
     border-color: var(--primary);
 }
 
@@ -946,7 +1009,7 @@ body {
 
 .service-item:hover {
     border-color: var(--primary);
-    box-shadow: 0 5px 20px rgba(175, 155, 191, 0.3), 0 0 15px rgba(227, 200, 222, 0.3);
+    box-shadow: 0 5px 20px rgba(223, 228, 234, 0.3), 0 0 15px rgba(242, 232, 213, 0.3);
 }
 
 .project-item {
@@ -955,7 +1018,7 @@ body {
 
 .project-item:hover {
     border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 20px rgba(227, 200, 222, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 20px rgba(242, 232, 213, 0.3) !important;
 }
 
 .btn-outline-primary {
@@ -966,13 +1029,13 @@ body {
 .btn-outline-primary:hover {
     background-color: var(--primary);
     border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(218, 98, 184, 0.4);
+    box-shadow: 0 0 20px rgba(203, 161, 83, 0.4);
 }
 
 .btn-outline-light:hover {
     background-color: var(--primary);
     border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(218, 98, 184, 0.4);
+    box-shadow: 0 0 20px rgba(203, 161, 83, 0.4);
 }
 
 .section-title::before {
@@ -996,7 +1059,7 @@ input.form-control:focus,
 textarea.form-control:focus,
 select.form-control:focus {
     border-color: var(--primary);
-    box-shadow: 0 0 0 0.2rem rgba(218, 98, 184, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(203, 161, 83, 0.25);
 }
 
 /*** Bootstrap Override for Primary Color ***/
@@ -1008,9 +1071,9 @@ select.form-control:focus {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-    background-color: #C850A0 !important;
-    border-color: #C850A0 !important;
-    box-shadow: 0 0 0 0.2rem rgba(218, 98, 184, 0.5) !important;
+    background-color: #A38142 !important;
+    border-color: #A38142 !important;
+    box-shadow: 0 0 0 0.2rem rgba(203, 161, 83, 0.5) !important;
 }
 
 .bi-primary {
@@ -1036,15 +1099,15 @@ select.form-control:focus {
 
 /*** Glow Effects ***/
 .glow-effect {
-    box-shadow: 0 0 20px rgba(227, 200, 222, 0.5);
+    box-shadow: 0 0 20px rgba(242, 232, 213, 0.5);
 }
 
 .btn-primary.glow-effect {
-    box-shadow: 0 0 20px rgba(218, 98, 184, 0.5);
+    box-shadow: 0 0 20px rgba(203, 161, 83, 0.5);
 }
 
 .card.glow-effect {
-    box-shadow: 0 0 20px rgba(227, 200, 222, 0.4);
+    box-shadow: 0 0 20px rgba(242, 232, 213, 0.4);
 }
 
 /*** Footer About Section ***/
